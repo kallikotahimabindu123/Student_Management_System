@@ -31,14 +31,16 @@ A fully functional **Student Management System** built with **Python** and **MyS
 
 ## 📂 Project Architecture
 
-    student-management-system-python-mysql/
-    │
-    ├── database.py # MySQL connection & table creation
-    ├── models.py # Student model definition
-    ├── student_manager.py # CRUD operations
-    ├── main.py # Console-based user interface
-    ├── requirements.txt # Python dependencies
-    └── README.md # Project documentation
+    📦 student-management-system-python-mysql/
+├── 📄 database.py           # MySQL connection & table creation
+├── 📄 models.py             # Student model definition
+├── 📄 student_manager.py    # CRUD operations
+├── 📄 main.py               # Console-based user interface
+├── 📄 requirements.txt      # Python dependencies
+├── 📄 README.md             # Project documentation
+├── 📄 .gitignore            # To exclude pycache and unnecessary files
+└── 📁 __pycache__/          # (auto-generated; excluded from GitHub)
+
 
 
 
