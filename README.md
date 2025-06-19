@@ -52,24 +52,24 @@ student-management-system-python-mysql/
     pip install -r requirements.txt
 
 ### 3️⃣ Setup MySQL Database
-Ensure MySQL Server is installed and running on your system.
+    Ensure MySQL Server is installed and running on your system.
 
-Login to MySQL:
-    mysql -u root -p
+    Login to MySQL:
+        mysql -u root -p
 
-Create the database:
-    CREATE DATABASE student_db;
-    (Optional: You can skip this if your database.py creates DB automatically.)
+    Create the database:
+        CREATE DATABASE student_db;
+        (Optional: You can skip this if your database.py creates DB automatically.)
 
 ### 4️⃣ Configure MySQL Credentials
 
-Open database.py and update your MySQL credentials:
-    HOST = "localhost"
-    USER = "root"
-    PASSWORD = "your_mysql_password"
-    DATABASE = "student_db"
+    Open database.py and update your MySQL credentials:
+        HOST = "localhost"
+        USER = "root"
+        PASSWORD = "your_mysql_password"
+        DATABASE = "student_db"
 
 ### 5️⃣ Run the Application
-python main.py
+    python main.py
 
 
