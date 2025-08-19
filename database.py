@@ -6,7 +6,7 @@ import mysql.connector
 # MySQL database credentials (edit accordingly)
 HOST = "localhost"
 USER = "root"
-PASSWORD = "Suma@2004"  
+PASSWORD = "connect"  
 DATABASE = "student_db"
 
 def create_connection():

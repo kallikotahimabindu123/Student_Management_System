@@ -1,86 +1,95 @@
-# Student Management System (Python + MySQL)
 
-## 🚀 Project Overview
-
-A fully functional **Student Management System** built with **Python** and **MySQL**, demonstrating complete CRUD operations and professional backend architecture. This project simulates real-world backend development with clean modular design, secure database integration, and scalable structure.
 
 ---
 
-## 🎯 Key Features
+# Student Management System (Python + MySQL)
 
-- ✅ Add new student records
-- ✅ View all student records (sorted by name)
-- ✅ Search student by ID
-- ✅ Update student details
-- ✅ Delete student records
-- ✅ MySQL database integration
-- ✅ Fully modular and clean code structure
-- ✅ Secure parameterized queries (Prevents SQL Injection)
+## 📌 Overview
+
+A simple **console-based Student Management System** built using **Python** and **MySQL**.
+It demonstrates complete **CRUD operations**: Add, View, Search, Update, and Delete students.
+
+---
+
+## ✨ Features
+
+* Add new student
+* Display all students
+* Search student by ID
+* Update student details
+* Delete student records
+* MySQL database integration
 
 ---
 
 ## 🛠 Tech Stack
 
-| Technology | Usage |
-|------------|--------|
-| **Python 3** | Application logic & backend |
-| **MySQL** | Database management system |
-| **mysql-connector-python** | Python MySQL integration |
+* Python 3
+* MySQL
+* mysql-connector-python
 
 ---
 
-## 📂 Project Folder Structure
+## 📂 Project Structure
 
-- database.py  (MySQL connection & table creation)
-- models.py  (Student model definition)
-- student_manager.py  (CRUD operations)
-- main.py  (Console-based user interface)
-- requirements.txt  (Python dependencies)
-- README.md  (Documentation)
-- .gitignore  (Git ignore rules)
+```
+student-management-system-python-mysql/
+│
+├── main.py              # Console interface
+├── student_manager.py   # CRUD operations
+├── database.py          # DB connection
+├── requirements.txt     # Dependencies
+└── README.md            # Documentation
+```
 
-
-
+---
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone the Repository
-    git clone https://github.com/suma-sree/student-management-system-python-mysql.git
-    cd student-management-system-python-mysql
+### 1️⃣ Clone Repository
 
-### 2️⃣ Install Python Dependencies
-    pip install -r requirements.txt
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+```
 
-### 3️⃣ Setup MySQL Database
-    Ensure MySQL Server is installed and running on your system.
+### 2️⃣ Install Dependencies
 
-    Login to MySQL:
-        mysql -u root -p
+```bash
+pip install -r requirements.txt
+```
 
-    Create the database:
-        CREATE DATABASE student_db;
-        (Optional: You can skip this if your database.py creates DB automatically.)
+### 3️⃣ Setup MySQL
 
-### 4️⃣ Configure MySQL Credentials
+```sql
+CREATE DATABASE student_db;
+USE student_db;
 
-    Open database.py and update your MySQL credentials:
-        HOST = "localhost"
-        USER = "root"
-        PASSWORD = "your_mysql_password"
-        DATABASE = "student_db"
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    marks FLOAT
+);
+```
 
-### 5️⃣ Run the Application
-    python main.py
+### 4️⃣ Configure Database
 
-## 🧠 Concepts Demonstrated
-✅ Modular architecture (separation of layers)
+Update `database.py` with your MySQL username & password:
 
-✅ Relational Database Design (MySQL)
+```python
+HOST = "localhost"
+USER = "root"
+PASSWORD = "your_mysql_password"
+DATABASE = "student_db"
+```
 
-✅ Secure SQL queries (parameterized queries)
+### 5️⃣ Run Application
 
-✅ Exception handling & input validation
+```bash
+python main.py
+```
 
-✅ OOP (Object-Oriented Programming)
+---
 
-✅ Scalable backend design
+

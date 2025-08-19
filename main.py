@@ -11,8 +11,8 @@ def main():
     while True:
         print("\n========== Student Management System ==========")
         print("1. Add Student")
-        print("2. Display All Students")
-        print("3. Search Student by ID")
+        print("2. Search Student by ID")
+        print("3. Display All the Students")
         print("4. Update Student Details")
         print("5. Delete Student")
         print("6. Exit")
@@ -27,11 +27,11 @@ def main():
                 manager.add_student(name, age, marks)
 
             elif choice == "2":
-                manager.display_all_students()
-
-            elif choice == "3":
                 student_id = int(input("Enter student ID to search: "))
                 manager.search_student(student_id)
+
+            elif choice == "3":
+                manager.display_all_students()
 
             elif choice == "4":
                 student_id = int(input("Enter student ID to update: "))
